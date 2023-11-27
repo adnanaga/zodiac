@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Horoscope Form:</h1>
+        <form id="myForm">
+            <label for="firstName"> First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name">
+            <br>
+
+            <label for="lastName"> Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name">
+            <br>
+            <label for="dob">Birthday:</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <button type="button" onclick="submitForm();"">Submit</button>
+        </form>
+        <p>
+            <div id="result">No Info here yet</div>
+                <br>
+                <div id="scope"></div>
+        </p>
+        <br>
+        <img id="tarotImage" src="" alt="Tarot Card Image">
+    </div>
+
+    <script src="client.js" defer></script>
+</body>
+</html>
